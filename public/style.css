@@ -1,0 +1,119 @@
+/* COMMON */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* LOGIN PAGE */
+.login-body {
+  background: linear-gradient(to right, #667eea, #764ba2);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.login-card h2 {
+  margin-bottom: 20px;
+}
+
+.login-card input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.login-card button {
+  padding: 10px 20px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background: #3730a3;
+}
+
+/* DASHBOARD */
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.user {
+  margin-bottom: 5px;
+}
+
+#logoutBtn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 12px;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#logoutBtn:hover {
+  background: #b91c1c;
+}
+
+#stockCount {
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 15px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.buttons button {
+  margin: 6px;
+  padding: 10px 16px;
+  background: #2563eb;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: #1e40af;
+}
+
+.buttons button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f3f4f6;
+  margin: 6px auto;
+  padding: 10px;
+  width: 80%;
+  border-radius: 6px;
+  font-weight: bold;
+}

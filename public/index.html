@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login | Stock Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+
+  <div class="login-card">
+    <h2>📊 Stock Broker Login</h2>
+    <input type="email" id="email" placeholder="Enter your email" required>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <script>
+  function login() {
+    const email = document.getElementById("email").value.trim();
+
+    // Basic email format check
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!email) {
+      alert("Email is required");
+      return;
+    }
+
+    if (!emailPattern.test(email)) {
+      alert("Please enter a valid email address");
+      return;
+    }
+
+    localStorage.setItem("userEmail", email);
+    window.location.href = "dashboard.html";
+  }
+</script>
+
+</body>
+</html>

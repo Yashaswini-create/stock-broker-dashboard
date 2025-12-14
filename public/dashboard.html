@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stock Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>📈 Stock Broker Dashboard</h1>
+
+    <p class="user">
+      Logged in as: <span id="user"></span>
+      <button id="logoutBtn">Logout</button>
+    </p>
+
+    <p id="stockCount">Subscribed Stocks: 0 / 5</p>
+
+    <div class="card">
+      <h2>Select Stocks</h2>
+      <div id="stock-buttons" class="buttons"></div>
+    </div>
+
+    <div class="card">
+      <h2>Live Stock Prices</h2>
+      <ul id="price-list">
+        <li>Please select a stock to view live prices.</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
